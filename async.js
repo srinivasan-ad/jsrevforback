@@ -16,12 +16,14 @@ posts.forEach((post,index)=>{
 
             setTimeout(()=>{
                 posts.push(post);
-            let error = false;
+                let error = false;
+                // checking error condition
+                // let error = true;
             if(!error){
                 resolve();
             }
             else{
-                reject('errors something went wrong')
+                reject(()=>console.error('errors something went wrong'))
             }
         },2000);
         })
