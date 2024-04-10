@@ -6,7 +6,7 @@ let posts = [
         setTimeout(()=>{
         let output = '';
 posts.forEach((post,index)=>{
-    output += `<li>${post.title}</li>`
+    output += `<li>${post.title} : ${post.body}</li>`
 });
        document.body.innerHTML=output; },1000)
     }
