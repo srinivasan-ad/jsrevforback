@@ -35,5 +35,6 @@ posts.forEach((post,index)=>{
     setTimeout(resolve,2000,'World')    );
     // This is for using resolve and reject in .then instead of using a seperate catch block
     // Promise.all([promise1,promise2,promise3]).then((values)=>{console.log(values)},(error)=>{console.log(error)});
-    Promise.all([promise1,promise2,promise3]).then((values)=>console.log(values))
+    Promise.all([promise1,promise2,promise3]).then((values)=>console.log(values));
+    
 
