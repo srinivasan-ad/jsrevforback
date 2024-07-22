@@ -1,6 +1,6 @@
 const fs = require("fs");
 const data = "writing to test.txt :)";
-fs.writeFile("test.txt", data, (err) => {
+fs.writeFile("test2.txt", data, (err) => {
   if (err) {
     console.log(err);
     return;
